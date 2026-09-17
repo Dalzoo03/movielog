@@ -15,9 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'MovieLog',
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF50388A),
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF50388A)),
       ),
       home: const StartScreen(),
     );
@@ -64,6 +62,8 @@ class StartScreen extends StatelessWidget {
               const Text(
                 '영화의 순간을\n기록하세요',
                 textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.w400,
@@ -103,10 +103,7 @@ class StartScreen extends StatelessWidget {
                 ),
                 child: const Text(
                   '시작하기',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
                 ),
               ),
             ],
