@@ -65,7 +65,7 @@ class StartScreen extends StatelessWidget {
                 '영화의 순간을\n기록하세요',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 30,
                   fontWeight: FontWeight.w400,
                   height: 1.3,
                   color: Color(0xFF20201E),
